@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "f3deathcoords",
+  "version": "${version}",
+
+  "name": "F3DeathCoords",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Lukiiy"
+  ],
+  "contact": {
+    "sources": "https://github.com/Lukiiy/F3DeathCoords",
+    "issues": "https://github.com/Lukiiy/F3DeathCoords/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/f3deathcoords/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.lukiiy.f3deathcoords.F3DeathCoords"
+    ]
+  },
+  "mixins": [
+    "f3deathcoords.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "minecraft": "1.0.0-beta.7.3"
+  },
+  "suggests": {
+    "f3mod": "*"
+  }
+}

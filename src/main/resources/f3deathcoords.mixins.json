@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.lukiiy.f3deathcoords.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "DeathScreenMixin",
+    "ScreenAccessor",
+    "TitleMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
