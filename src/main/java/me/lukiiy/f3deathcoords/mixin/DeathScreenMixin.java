@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class DeathScreenMixin {
     @Inject(method = "init", at = @At("TAIL"))
     private void f3Death$saveCoords(CallbackInfo ci) {
-        ClientPlayerEntity player = ((ScreenAccessor) this).getMinecraft().player;
+        ClientPlayerEntity player = ((MinecraftAccessor) this).f3Death$getMinecraft().player;
 
         F3DeathCoords.set(player.x, player.y, player.z);
     }

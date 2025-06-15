@@ -6,8 +6,8 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
 @Mixin(Screen.class)
-public interface ScreenAccessor {
+public interface MinecraftAccessor {
     @Accessor("minecraft")
-    Minecraft getMinecraft();
+    Minecraft f3Death$getMinecraft();
 }
 
